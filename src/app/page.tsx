@@ -578,13 +578,23 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-[#141413]/10 py-10">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#141413]/35">
-          <span className="font-[family-name:var(--font-playfair)] text-base font-semibold text-[#141413]/55">
-            Project<span className="text-[#EA580C]">.IA</span>
-          </span>
-          <span>Project.IA é uma empresa do grupo ProjectEXE</span>
-          <span>© 2025 Todos os direitos reservados</span>
+      <footer className="border-t border-[#141413]/10 py-12">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <span className="font-[family-name:var(--font-playfair)] text-base font-semibold text-[#141413]/55">
+              Project<span className="text-[#EA580C]">.IA</span>
+            </span>
+            <div className="flex flex-col items-center gap-3">
+              <span className="text-xs text-[#141413]/35 tracking-widest uppercase font-medium">Uma empresa do grupo</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo-projectexe.png"
+                alt="ProjectEXE"
+                className="h-8 opacity-40 hover:opacity-70 transition-opacity duration-300"
+              />
+            </div>
+            <span className="text-sm text-[#141413]/35">© 2025 Todos os direitos reservados</span>
+          </div>
         </div>
       </footer>
 
