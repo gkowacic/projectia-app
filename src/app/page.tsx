@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-const WA_LINK = "https://wa.me/5547993380808";
+const WA_LINK = "https://wa.me/5547933808082";
 
 function FadeUp({
   children,
@@ -50,7 +50,7 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F5F4EF]/85 backdrop-blur-lg border-b border-[#141413]/[0.08]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="font-[family-name:var(--font-playfair)] text-xl font-semibold tracking-tight select-none">
-            Project<span className="text-[#7C3AED]">.IA</span>
+            Project<span className="text-[#EA580C]">.IA</span>
           </span>
           <div className="hidden md:flex items-center gap-8 text-sm text-[#141413]/60 font-medium">
             <a href="#servicos" className="hover:text-[#141413] transition-colors duration-200">Serviços</a>
@@ -62,7 +62,7 @@ export default function Home() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#141413] text-[#F5F4EF] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#7C3AED] transition-colors duration-300"
+            className="bg-[#141413] text-[#F5F4EF] px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#EA580C] transition-colors duration-300"
           >
             Fale conosco
           </a>
@@ -101,9 +101,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-2 bg-[#7C3AED]/10 text-[#7C3AED] text-xs font-semibold px-4 py-2 rounded-full mb-10 border border-[#7C3AED]/20 tracking-wide uppercase"
+            className="inline-flex items-center gap-2 bg-[#EA580C]/10 text-[#EA580C] text-xs font-semibold px-4 py-2 rounded-full mb-10 border border-[#EA580C]/20 tracking-wide uppercase"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C] animate-pulse" />
             Automação com Inteligência Artificial
           </motion.div>
 
@@ -115,7 +115,7 @@ export default function Home() {
           >
             IA que trabalha.{" "}
             <br className="hidden md:block" />
-            <span className="italic text-[#7C3AED]">Empresa</span>{" "}
+            <span className="italic text-[#EA580C]">Empresa</span>{" "}
             que cresce.
           </motion.h1>
 
@@ -138,7 +138,7 @@ export default function Home() {
               href={WA_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#141413] text-[#F5F4EF] px-8 py-4 rounded-full text-base font-medium hover:bg-[#7C3AED] transition-all duration-300 group shadow-lg shadow-[#141413]/10"
+              className="inline-flex items-center gap-3 bg-[#141413] text-[#F5F4EF] px-8 py-4 rounded-full text-base font-medium hover:bg-[#EA580C] transition-all duration-300 group shadow-lg shadow-[#141413]/10"
             >
               <WaIcon className="w-5 h-5" />
               Falar com especialista
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="py-32 border-t border-[#141413]/10">
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp>
-            <p className="text-xs font-semibold text-[#7C3AED] mb-5 tracking-[0.2em] uppercase">O problema</p>
+            <p className="text-xs font-semibold text-[#EA580C] mb-5 tracking-[0.2em] uppercase">O problema</p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-semibold mb-16 max-w-lg leading-[1.15]">
               Sua equipe ainda perde tempo com isso?
             </h2>
@@ -196,7 +196,7 @@ export default function Home() {
               },
             ].map((item, i) => (
               <FadeUp key={item.num} delay={i * 0.1}>
-                <div className="bg-[#141413]/[0.025] border border-[#141413]/[0.08] rounded-2xl p-8 hover:border-[#7C3AED]/25 hover:bg-[#7C3AED]/[0.025] transition-all duration-300 h-full">
+                <div className="bg-[#141413]/[0.025] border border-[#141413]/[0.08] rounded-2xl p-8 hover:border-[#EA580C]/25 hover:bg-[#EA580C]/[0.025] transition-all duration-300 h-full">
                   <span className="font-[family-name:var(--font-playfair)] text-6xl font-semibold text-[#141413]/10 leading-none block mb-4">
                     {item.num}
                   </span>
@@ -219,7 +219,7 @@ export default function Home() {
           <FadeUp>
             <h2 className="font-[family-name:var(--font-playfair)] text-5xl md:text-6xl font-semibold mb-10 max-w-2xl leading-[1.1]">
               A Project.IA{" "}
-              <span className="italic text-[#C4B5FD]">resolve.</span>
+              <span className="italic text-[#FED7AA]">resolve.</span>
             </h2>
             <p className="text-[#F5F4EF]/55 text-lg mb-12 max-w-xl leading-relaxed">
               Trazemos IA para dentro do seu negócio de forma prática, sem necessidade de equipe técnica interna.
@@ -232,7 +232,7 @@ export default function Home() {
               ].map((pill) => (
                 <div
                   key={pill.label}
-                  className="border border-[#F5F4EF]/15 text-[#F5F4EF] px-6 py-3 rounded-full flex items-center gap-2 hover:border-[#7C3AED] hover:text-[#C4B5FD] transition-all duration-300 cursor-default"
+                  className="border border-[#F5F4EF]/15 text-[#F5F4EF] px-6 py-3 rounded-full flex items-center gap-2 hover:border-[#EA580C] hover:text-[#FED7AA] transition-all duration-300 cursor-default"
                 >
                   <span className="font-semibold">{pill.label}</span>
                   <span className="text-[#F5F4EF]/35 text-sm">— {pill.desc}</span>
@@ -247,7 +247,7 @@ export default function Home() {
       <section id="servicos" className="py-32 border-t border-[#141413]/10">
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp>
-            <p className="text-xs font-semibold text-[#7C3AED] mb-5 tracking-[0.2em] uppercase">Serviços</p>
+            <p className="text-xs font-semibold text-[#EA580C] mb-5 tracking-[0.2em] uppercase">Serviços</p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-semibold mb-16 max-w-md leading-[1.15]">
               O que entregamos
             </h2>
@@ -294,8 +294,8 @@ export default function Home() {
               },
             ].map((service, i) => (
               <FadeUp key={service.title} delay={i * 0.08}>
-                <div className="group border border-[#141413]/10 rounded-2xl p-8 hover:border-[#7C3AED]/35 hover:shadow-xl hover:shadow-[#7C3AED]/5 transition-all duration-300 cursor-default h-full">
-                  <div className="w-12 h-12 rounded-xl bg-[#7C3AED]/[0.08] text-[#7C3AED] flex items-center justify-center mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-all duration-300">
+                <div className="group border border-[#141413]/10 rounded-2xl p-8 hover:border-[#EA580C]/35 hover:shadow-xl hover:shadow-[#EA580C]/5 transition-all duration-300 cursor-default h-full">
+                  <div className="w-12 h-12 rounded-xl bg-[#EA580C]/[0.08] text-[#EA580C] flex items-center justify-center mb-6 group-hover:bg-[#EA580C] group-hover:text-white transition-all duration-300">
                     {service.icon}
                   </div>
                   <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold mb-3 leading-snug">{service.title}</h3>
@@ -311,7 +311,7 @@ export default function Home() {
       <section id="cases" className="py-32 border-t border-[#141413]/10">
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp>
-            <p className="text-xs font-semibold text-[#7C3AED] mb-5 tracking-[0.2em] uppercase">Caso Real</p>
+            <p className="text-xs font-semibold text-[#EA580C] mb-5 tracking-[0.2em] uppercase">Caso Real</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <div className="bg-[#141413] rounded-3xl p-10 md:p-16 relative overflow-hidden">
@@ -322,7 +322,7 @@ export default function Home() {
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   Em operação agora
                 </div>
-                <div className="text-[#7C3AED] text-sm font-semibold mb-3 tracking-wide">Translaser</div>
+                <div className="text-[#EA580C] text-sm font-semibold mb-3 tracking-wide">Translaser</div>
                 <h3 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-semibold text-white mb-6 max-w-2xl leading-tight">
                   SDR automatizado no WhatsApp com IA
                 </h3>
@@ -351,7 +351,7 @@ export default function Home() {
       <section id="como-funciona" className="py-32 border-t border-[#141413]/10">
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp>
-            <p className="text-xs font-semibold text-[#7C3AED] mb-5 tracking-[0.2em] uppercase">Processo</p>
+            <p className="text-xs font-semibold text-[#EA580C] mb-5 tracking-[0.2em] uppercase">Processo</p>
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-semibold mb-20 max-w-md leading-[1.15]">
               Como funciona
             </h2>
@@ -372,7 +372,7 @@ export default function Home() {
                     {step.num}
                   </div>
                   <div className="relative">
-                    <div className="w-10 h-10 rounded-full border-2 border-[#7C3AED] text-[#7C3AED] flex items-center justify-center text-sm font-bold mb-6">
+                    <div className="w-10 h-10 rounded-full border-2 border-[#EA580C] text-[#EA580C] flex items-center justify-center text-sm font-bold mb-6">
                       {step.num}
                     </div>
                     <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold mb-4">{step.title}</h3>
@@ -392,7 +392,7 @@ export default function Home() {
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-semibold mb-6 leading-[1.1]">
                 Pronto para trazer{" "}
-                <span className="italic text-[#7C3AED]">IA</span>{" "}
+                <span className="italic text-[#EA580C]">IA</span>{" "}
                 para o seu negócio?
               </h2>
               <p className="text-[#141413]/55 text-lg mb-12 leading-relaxed max-w-lg mx-auto">
@@ -402,7 +402,7 @@ export default function Home() {
                 href={WA_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 bg-[#7C3AED] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[#6D28D9] transition-all duration-300 shadow-2xl shadow-[#7C3AED]/25 hover:shadow-[#7C3AED]/40 hover:-translate-y-0.5 group"
+                className="inline-flex items-center gap-3 bg-[#EA580C] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[#C2410C] transition-all duration-300 shadow-2xl shadow-[#EA580C]/25 hover:shadow-[#EA580C]/40 hover:-translate-y-0.5 group"
               >
                 <WaIcon className="w-5 h-5" />
                 Agendar conversa gratuita
@@ -417,7 +417,7 @@ export default function Home() {
       <footer className="border-t border-[#141413]/10 py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#141413]/35">
           <span className="font-[family-name:var(--font-playfair)] text-base font-semibold text-[#141413]/55">
-            Project<span className="text-[#7C3AED]">.IA</span>
+            Project<span className="text-[#EA580C]">.IA</span>
           </span>
           <span>Project.IA é uma empresa do grupo ProjectEXE</span>
           <span>© 2025 Todos os direitos reservados</span>
